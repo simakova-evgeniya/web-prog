@@ -562,7 +562,7 @@
     list-style: none;
 }
 
-.cubmenu-list {
+.submenu-list {
     display: flex;
     font-family: Lato;
     font-style: normal;
@@ -613,6 +613,7 @@
 
 .filter:hover {
     color: #EF5B70;
+    cursor: pointer;
 }
 
 .sorting {
@@ -653,7 +654,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #6F6E6E;
-    margin-right: 15px;
+    padding: 7px;
 }
 
 .page-arrow {
@@ -674,6 +675,7 @@
     position: absolute;
     margin-left: 150px;
     z-index: 100;
+    padding-top: 10px;
 }
 
 .sorting:hover .widget-size {
@@ -689,8 +691,9 @@
     font-size: 14px;
     line-height: 16px;
     color: #6F6E6E;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    padding-left: 10px;
 }
 
 .widget__filter {
@@ -738,6 +741,7 @@
 .filter_box:hover .widget__filter {
     display: block;
     position: absolute;
+    cursor: pointer;
 }
 
 .carousel {
@@ -756,12 +760,6 @@
     max-width: 1600px;
 }
 
-.fas {
-    font-size: 28px;
-    color: black;
-    padding: 12px 17px;
-}
-
 .fas:hover {
     color: #F16D7F;
 }
@@ -770,18 +768,25 @@
     background: rgba(42, 42, 42, 0.15);
     width: 47px;
     height: 47px;
+    border: none;
 }
 
 .carusel__product-description {
     background: #FFFFFF;
     width: 1141px;
-    height: 601px;
-    top: 860px;
+    top: 935px;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    align-items: center;
+    margin-bottom: 12px;
+    border: 1px solid #EAEAEA;
 }
 
 .products__catalog {
-    margin-top: 665px;
+    margin-top: 664px;
 }
 
 .product__buttons {
@@ -793,3 +798,274 @@
     color: #F26376;
     font-size: 14px;
 }
+
+.product__selection {
+    display: flex;
+    margin-top: 96px;
+}
+
+.cart__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.selection_cart {
+    display: flex;
+    width: 652px;
+    height: 306px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgb(34 60 80 / 20%);
+    margin-bottom: 40px;
+}
+
+.shopping_cart-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.shopping_cart {
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-left: 31px;
+    width: 390px;
+}
+
+.heading_cart {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    width: 262px;
+}
+
+.btn-close {
+    margin-top: 6px;
+    margin-right: 22px;
+}
+
+.cart_info {
+    margin-left: 129px;
+    padding-top: 17px;
+}
+
+.heading_form {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.input_text {
+    width: 360px;
+    height: 45px;
+    padding-left: 17px;
+    border: 1px solid #A4A4A4;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 21px;
+}
+
+.input_text_mini {
+    width: 100px;
+    height: 34px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-bottom: 57px;
+}
+
+.submit__box {
+    width: 360px;
+    height: 214px;
+    background: #F5F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 39px;
+}
+
+.sub-total {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-right: 34px;
+}
+
+.grand-total {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-right: 37px;
+    margin-bottom: 21px;
+}
+
+.grand-price {
+    color: #F16D7F;
+    margin-left: 15px;
+}
+
+.submit_button {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 43px;
+    text-align: center;
+    margin-right: 43px;
+    border: 1px solid #FF6A6A;
+    margin-top: 17px;
+}
+
+.submit_button:hover {
+    background: #F16D7F;
+    color: #fff;
+}
+
+.total-line {
+    margin-right: 42px;
+}
+
+.text_cart {
+    padding: 0;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.parameters_product {
+    margin-bottom: 6px;
+}
+
+.parametrs_product_price {
+    color: #F16D7F;
+}
+
+.counter_product {
+    border: 1px solid #EAEAEA;
+    width: 44px;
+    height: 25px;
+    margin-left: 24px;
+    text-align: center;
+}
+
+.button_cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_cart-mini {
+    border: 1px solid #A4A4A4;
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    display: inline-block;
+    padding: 17px 40px;
+    background: none;
+}
+
+.category__product-description {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+}
+
+.title_product {
+    margin-top: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+
+.product-description {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    width: 50%;
+    margin-bottom: 32px;
+}
+
+.product-price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-bottom: 65px;
+}
+
+.button__carusel-cart {
+    text-decoration: none;
+    color: #F26376;
+    font-size: 14px;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s ease-in-out;
+    font-family: Lato;
+    line-height: 17px;
+    border: 1px solid #F26376;
+    padding: 14px 56px 12px 23px;
+}
+
+.button__carusel-cart::before {
+    content: "";
+    background-image: url(img/cart/bascet_pink.svg);
+    width: 26px;
+    height: 24px;
+    margin-right: 22px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button__carusel-cart:hover {
+    background: #F16D7F;
+    color: #fff;
+}
+
