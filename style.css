@@ -612,7 +612,13 @@
 }
 
 .filter:hover {
+    fill: #F16D7F;
     color: #EF5B70;
+    cursor: pointer;
+}
+
+.svg path:hover{
+    fill: pink;
     cursor: pointer;
 }
 
@@ -1164,4 +1170,22 @@
 .submit__registration:hover {
     background: #F16D7F;
     color: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media (max-width:768px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
