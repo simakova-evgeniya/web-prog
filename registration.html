@@ -14,6 +14,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/184a982feb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <title>registration</title>
 </head>
 
@@ -29,8 +30,44 @@
         </div>
         <div class="right">
             <div class="right__burger">
-                <a href="#" class="link"><img src="img/burger.svg" alt="burger"></a>
+                <input type="checkbox" class="input-check" id="check">
+                <label for="check" class="link-burger"><img src="img/burger.svg" alt="menu"></label>
+                <div class="widget_menu">
+                    <input type="checkbox" class="input-checkClose" id="check">
+                    <label for="check" class="close"><img src="img/close.svg" alt="close"></label>
+                    <h3 class="widget-title">MENU</h3>
+                    <ul class="menu-list">
+                        <li><a href="#" class="submenu-list">MAN</a>
+                            <ul>
+                                <li><a href="#" class="product-list">Accessories</a></li>
+                                <li><a href="#" class="product-list">Bags</a></li>
+                                <li><a href="#" class="product-list">Denim</a></li>
+                                <li><a href="#" class="product-list">T-Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="submenu-list">WOMAN</a>
+                            <ul>
+                                <li><a href="#" class="product-list">Accessories</a></li>
+                                <li><a href="#" class="product-list">Jackets & Coats</a></li>
+                                <li><a href="#" class="product-list">Polos</a></li>
+                                <li><a href="#" class="product-list">T-Shirts</a></li>
+                                <li><a href="#" class="product-list">Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="submenu-list">KIDS</a>
+                            <ul>
+                                <li><a href="#" class="product-list">Accessories</a></li>
+                                <li><a href="#" class="product-list">Jackets & Coats</a></li>
+                                <li><a href="#" class="product-list">Polos</a></li>
+                                <li><a href="#" class="product-list">T-Shirts</a></li>
+                                <li><a href="#" class="product-list">Shirts</a></li>
+                                <li><a href="#" class="product-list">Bags</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <div class="right__person">
                 <a href="registration.html" class="link"><img src="img/person.svg" alt="person"></a>
             </div>
@@ -40,47 +77,53 @@
         </div>
     </div>
 </header>
+
 <main class="Cart">
     <div class="new__arrivals">
         <div class="top__info container">
-            <div class="slogan__catalog">REGISTRATION</div>
+            <span class="slogan__catalog">REGISTRATION</span>
         </div>
     </div>
+
     <div class="registracion__box container">
-        <div class="submit_block">
-            <fieldset>
-                <legend class="submit_header">Your name</legend>
-                <div class="submit_block">
-                    <label for="input-text" class="visually-hidden">First Name</label>
-                    <input class="input input_text" type="text" id="input-text" placeholder="First Name" required>
-                    <label for="input-text" class="visually-hidden">Last Name</label>
-                    <input class="input input_text" type="text" id="input-text" placeholder="Last Name" required>
+        <form action="">
+            <div class="submit_block">
+                <fieldset>
+                    <legend class="submit_header">Your name</legend>
+                    <div class="submit_block">
+                        <label for="input-text" class="visually-hidden">First Name</label>
+                        <input class="input input_text" type="text" id="input-text" placeholder="First Name" required>
+                        <label for="input-text" class="visually-hidden">Last Name</label>
+                        <input class="input input_text" type="text" id="input-text" placeholder="Last Name" required>
+                    </div>
+                </fieldset>
+                <div class="gender__var">
+                    <input type="radio" class="gender-flag" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" class="gender-flag" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
                 </div>
-            </fieldset>
-            <div class="gender__var">
-                <input type="radio" class="gender-flag" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" class="gender-flag" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-            </div>
-            <fieldset>
-                <legend class="submit_header">Login details</legend>
-                <div class="submit_block">
-                    <label for="input-email" class="visually-hidden">Email</label>
-                    <input class="input input_text" type="email" id="input-email" placeholder="Email" required>
-                    <label for="input-password" class="visually-hidden">Password</label>
-                    <input class="input input_text" type="password" id="input-password" placeholder="Password">
-                    <p class="description__password">Please use 8 or more characters, with at least 1 number and a
-                        mixture
-                        of uppercase and lowercase
-                        letters</p>
+                <fieldset>
+                    <legend class="submit_header">Login details</legend>
+                    <div class="submit_block">
+                        <label for="input-email" class="visually-hidden">Email</label>
+                        <input class="input input_text" type="email" id="input-email" placeholder="Email" required>
+                        <label for="input-password" class="visually-hidden">Password</label>
+                        <input class="input input_text" type="password" id="input-password" placeholder="Password">
+                        <p class="description__password">Please use 8 or more characters, with at least 1 number and a
+                            mixture
+                            of uppercase and lowercase
+                            letters</p>
+                    </div>
+                </fieldset>
+                <div class="submit__registratio">
+                    <p><input type="submit" class="submit__registration" value="JOIN NOW" o><span class="submit_arr"><i
+                                class="fas fa-arrow-right submit_arrow"></i></span>
+                    </p>
                 </div>
-            </fieldset>
-            <div class="submit__registratio">
-                <p><input type="submit" class="submit__registration" value="JOIN NOW">
-                </p>
             </div>
-        </div>
+        </form>
+
 
         <div class="registration__block">
             <h4 class="heading__registration">LOYALTY HAS ITS PERKS</h4>
@@ -106,7 +149,6 @@
             </ul>
         </div>
     </div>
-    </div>
 </main>
 
 <footer class="footer">
@@ -127,6 +169,7 @@
                 <input type="email" id="email" placeholder="Enter Your Email" size="30" required
                     class="subscribe__email">
                 <input type="submit" class="subscribe__submit" value="Subscribe">
+
             </form>
         </div>
     </section>

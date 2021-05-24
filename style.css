@@ -99,6 +99,10 @@
     
 }
 
+.input-check {
+    display: none;
+}
+
 .offer {
     display: flex;
     justify-content: center;
@@ -183,12 +187,12 @@
 .products__img {
     display: block;
     width: 100%;
+    transition: .5s;
 }
 
 .products__img:hover {
     display: block;
     color: rgba(58, 56, 56, 0.86);
-    
 }
 
 .bascet__buttons {
@@ -230,11 +234,15 @@
     padding: 14px 16px 12px 13px;
 }
 
-.product__item:hover 
+.products__box:hover
+.products__img {
+    transform: scale(1.2);
+}
+.products__box:hover 
 .bascet__buttons {
     opacity: 1;
 }
-.product-item:hover 
+.products__box:hover 
 .button-cleek {
     transform: translate(-50%, -50%) scale(1);
  }
@@ -286,6 +294,7 @@
     display: inline-block;
     padding: 14px 38px;
     text-align: center;
+    transition: .5s;
 }
 
 .top-buttom:hover {
@@ -453,6 +462,7 @@
     color: black;
     text-decoration: none;
     margin-right: 7px;
+    transition: .3s;
 }
 
 .facebook:hover,
@@ -521,6 +531,10 @@
     color: #F16D7F;
 }
 
+.link-burger{
+    cursor: pointer;
+}
+
 .widget_menu {
     width: 232px;
     height: 764px;
@@ -535,15 +549,28 @@
     display: none;
 }
 
-.right__burger:hover .widget_menu {
+.input-check:checked~.widget_menu {
     display: block;
     opacity: 1;
+}
+
+.input-check:not(:checked)~.widget_menu {
+    display: none;
+}
+
+.input-checkClose {
+    display: none;
+}
+
+.input-checkClose:checked~.widget_menu {
+    display: none;
 }
 
 .close {
     width: 12px;
     height: 12px;
     margin: 16px 17px 9px 203px;
+    cursor: pointer;
 }
 
 .widget-title {
@@ -943,6 +970,7 @@
     margin-right: 43px;
     border: 1px solid #FF6A6A;
     margin-top: 17px;
+    transition: .5s;
 }
 
 .submit_button:hover {
@@ -1165,6 +1193,8 @@
     border: 1px solid #FF6A6A;
     background: none;
     color: #F26376;
+    transition: .5s;
+    position: relative;
 }
 
 .submit__registration:hover {
@@ -1183,7 +1213,18 @@
     overflow: hidden;
 }
 
-@media (max-width:768px) {
+.submit_arr {
+    display: flex;
+    left: -30px;
+    position: relative;
+    align-items: center;
+}
+
+.submit_arrow {
+    color: #F16D7F
+}
+
+@media screen and (max-width:1024px) {
     .container {
         padding-left: 16px;
         padding-right: 16px;
