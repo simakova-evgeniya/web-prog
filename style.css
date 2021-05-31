@@ -1260,8 +1260,25 @@
     height: 368px;
     }
 
+    .slogan__first {
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    .slogan__second {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .offer {
+        margin-bottom: 64px;
+    }
+
     .slogan {
         margin-right: 33px;
+    }
+
+    .offer-img-4 {
+        width: 100%;
     }
 
     .footer__position {
@@ -1327,6 +1344,10 @@
         margin-bottom: 56px;
     }
 
+    .subscribe {
+        background-position: -400px center;
+    }
+
     .registracion__box{
         flex-wrap: nowrap;
     }
@@ -1354,9 +1375,61 @@
     .start__page {
         background-image: none;
     }
+
+    .slogan {
+        height: 65px;
+    }
+
+    .slogan__first {
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .slogan__second {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .offer {
+        margin-bottom: 64px;
+    }
+
     .offer__card {
         display: flex;
         flex-direction: column;
     }
 
+    .offer__card-4 {
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+
+    .offer-img-4 {
+        width: auto;
+        height: 111px;
+        margin: 0 -195px 0 -195px;
+    }
+
+    .subscribe {
+        background-position: -500px center;
+    }
+
+    .subscribe__email {
+        width: 182px;
+    }
+
+    .subscribe__submit {
+        width: 95px;
+    }
+
+    .footer__mini {
+        height: 143px;
+    }
+
+    .mini-link {
+        flex-direction: column-reverse;
+    }
+
+    .social__networks {
+        margin-bottom: 40px;
+    }
 }
