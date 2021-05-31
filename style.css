@@ -50,14 +50,24 @@
 .start {
     display: flex;
     background: #f1e4e6;
+    height: 764px;
 }
+
+
 
 .start__page {
     display: flex;
     align-items: center;
     width: 100%;
     height: 764px;
-    background: #f1e4e6;
+    background-image: url(img/photo_header.png);
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    background-position: left;
+    position: relative;
+    justify-content: flex-end;
+    max-width: 1600px;
+
 }
 .photo {
     display: flex;
@@ -70,8 +80,9 @@
     margin-left: 63px;
     padding: 0;
     height: 92px;
-    width: 800px;
     border-left: 12px solid #F16D7F;
+    position: absolute;
+    margin-right: 331px;
 }
 
 .slogan__first,
@@ -108,13 +119,17 @@
     justify-content: center;
     margin-top: 65px;
     margin-bottom: 66px;
+    flex-direction: column;
 }
 
 .offer__card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+}
+
+.offer-img {
+    width: 100%;
 }
 
 .offer__item {
@@ -279,8 +294,8 @@
 }
 
 .products__top-buttom {
-    border: 1px solid #FF6A6A;
-    margin-left: 465px;
+    display: flex;
+    justify-content: center;
 }
 
 .top-buttom {
@@ -295,6 +310,7 @@
     padding: 14px 38px;
     text-align: center;
     transition: .5s;
+    border: 1px solid #FF6A6A;
 }
 
 .top-buttom:hover {
@@ -445,8 +461,6 @@
 }
 
 .footer__mini {
-    display: flex;
-    align-items: center;
     background-color: #222222;
     height: 79px;
 }
@@ -475,7 +489,9 @@
 
 .mini-link {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 24px;
 }
 
 .social__networks {
@@ -486,7 +502,7 @@
 
 .copirait {
     display: flex;
-    margin: 30px 655px 30px 0;
+    align-items: center;
     font-family: Lato;
     font-size: 16px;
     line-height: 19px;
@@ -1187,6 +1203,10 @@
     margin-bottom: 16px;
 }
 
+.submit__registratio {
+    display: flex;
+}
+
 .submit__registration {
     width: 167px;
     height: 50px;
@@ -1197,7 +1217,8 @@
     position: relative;
 }
 
-.submit__registration:hover {
+.submit__registration:hover
+{
     background: #F16D7F;
     color: #fff;
 }
@@ -1224,9 +1245,118 @@
     color: #F16D7F
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     .container {
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    .start {
+        height: 368px;
+    }
+
+    .start__page {
+        background-size: 50%;
+    height: 368px;
+    }
+
+    .slogan {
+        margin-right: 33px;
+    }
+
+    .footer__position {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 48px;
+    }
+
+    .offer {
+        margin-bottom: 130px;
+        margin-top: 20px;
+    }
+    
+    .footer{
+        margin-top: 65px;
+    }
+    .footer__block {
+        padding: 48px 0 0;
+    }
+
+    .submit_block {
+        margin-right: 22px;
+    }
+
+    .registration__block {
+        width: 50%;
+        padding-left: 22px;
+    }
+
+    .heading__registration {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .text-registration {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .regitration__offers {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .subscribe {
+        height: 614px;
+    }
+
+    .subscribe__info{   
+        margin-top: 56px;
+    }
+
+    .subscribe__form {
+        margin-bottom: 56px;
+    }
+
+    .registracion__box{
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .right__burger{
+        margin-right: 0;
+    }
+
+    .right__person {
+        display: none;
+    }
+
+    .right__basket {
+        display: none;
+    }
+
+    .start__page {
+        background-image: none;
+    }
+    .offer__card {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
