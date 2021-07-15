@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/184a982feb.js" crossorigin="anonymous"></script>
+    <title>shopping cart</title>
+</head>
+
+<header class="header">
+    <div class="container header__top">
+        <div class="left">
+            <div class="left__logo">
+                <a href="index.html" class="link"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="left__search">
+                <a href="#" class="link"><img src="img/search.svg" alt="search"></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right__burger">
+                <input type="checkbox" class="input-check" id="check">
+                <label for="check" class="link-burger"><img src="img/burger.svg" alt="menu"></label>
+                <div class="widget_menu">
+                    <input type="checkbox" class="input-checkClose" id="check">
+                    <label for="check" class="close"><img src="img/close.svg" alt="close"></label>
+                    <h3 class="widget-title">MENU</h3>
+                    <ul class="menu-list">
+                        <li><a href="#" class="submenu-list">MAN</a>
+                            <ul>
+                                <li><a href="#" class="product-list">Accessories</a></li>
+                                <li><a href="#" class="product-list">Bags</a></li>
+                                <li><a href="#" class="product-list">Denim</a></li>
+                                <li><a href="#" class="product-list">T-Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="submenu-list">WOMAN</a>
+                            <ul>
+                                <li><a href="#" class="product-list">Accessories</a></li>
+                                <li><a href="#" class="product-list">Jackets & Coats</a></li>
+                                <li><a href="#" class="product-list">Polos</a></li>
+                                <li><a href="#" class="product-list">T-Shirts</a></li>
+                                <li><a href="#" class="product-list">Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="submenu-list">KIDS</a>
+                            <ul>
+                                <li><a href="#" class="product-list">Accessories</a></li>
+                                <li><a href="#" class="product-list">Jackets & Coats</a></li>
+                                <li><a href="#" class="product-list">Polos</a></li>
+                                <li><a href="#" class="product-list">T-Shirts</a></li>
+                                <li><a href="#" class="product-list">Shirts</a></li>
+                                <li><a href="#" class="product-list">Bags</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right__person">
+                <a href="registration.html" class="link"><img src="img/person.svg" alt="person"></a>
+            </div>
+            <div class="right__basket">
+                <a href="cart.html" class="link"><img src="img/basket.svg" alt="basket"></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="Cart">
+    <div class="new__arrivals">
+        <div class="top__info container">
+            <div class="slogan__catalog">SHOPPING CART</div>
+        </div>
+    </div>
+    <div class="product__selection container">
+        <div class="cart__box">
+            <div class="selection_cart">
+                <div class="photo_cart"><img src="img/cart/cart_1.png" alt="photo"></div>
+                <div class="shopping_cart">
+                    <div class="shopping_cart-text">
+                        <span class="heading_cart">MANGO PEOPLE <br>T-SHIRT</span>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                    <ul class="text_cart">
+                        <li class="parameters_product">Price: <span class="parametrs_product_price">$300</span></li>
+                        <li class="parameters_product">Color: Red</li>
+                        <li class="parameters_product">Size: Xl</li>
+                        <li class="parameters_product">Quantity:<input class="counter_product" type="number"
+                                placeholder="2"> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selection_cart">
+                <div class="photo_cart"><img src="img/cart/cart_1.png" alt="photo"></div>
+                <div class="shopping_cart">
+                    <div class="shopping_cart-text">
+                        <span class="heading_cart">MANGO PEOPLE <br>T-SHIRT</span>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                    <ul class="text_cart">
+                        <li class="parameters_product">Price: <span class="parametrs_product_price">$300</span></li>
+                        <li class="parameters_product">Color: Red</li>
+                        <li class="parameters_product">Size: Xl</li>
+                        <li class="parameters_product">Quantity: <input class="counter_product" type="number"
+                                placeholder="2"> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="button_cart">
+                <button class="button_cart-mini">CLEAR SHOPPING CART</button>
+                <a href="catalog.html" class="button_cart-mini">CONTINUE SHOPPING</a>
+            </div>
+        </div>
+
+        <div class="cart_info">
+            <form action="#">
+                <fieldset>
+                    <legend class="heading_form">SHIPPING ADRESS</legend>
+
+                    <div class="submit_block">
+                        <label for="input-text" class="visually-hidden">City ​​name</label>
+                        <input class="input input_text" type="text" id="input-text" placeholder="Bangladesh"
+                            required><br>
+                    </div>
+                    <div class="submit_block">
+                        <label for="input-text" class="visually-hidden">State name</label>
+                        <input class="input input_text" type="text" id="input-text" placeholder="State" required><br>
+                    </div>
+                    <div class="submit_block">
+                        <label for="input-number" class="visually-hidden">Postcode / Zip</label>
+                        <input class="input input_text" type="number" id="input-number" pattern="[0-9]{6}"
+                            placeholder="Postcode / Zip"><br>
+                    </div>
+                    <div class="submit_block">
+                        <label for="input-text" class="visually-hidden">GET A QUOTE</label>
+                        <input class="input input_text input_text_mini" type="text" placeholder="GET A QUOTE"><br>
+                    </div>
+                </fieldset>
+                <div class="submit__box">
+                    <p><span class="sub-total">SUB TOTAL $900</span></p>
+                    <p class="grand-total">GRAND TOTAL<span class="grand-price">$900</span></p>
+                    <img class="total-line" src="img/cart/total_line.svg" alt="line">
+                    <p><input class="submit_button" type="submit" value="PROCEED TO CHECKOUT"></p>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</main>
+<footer class="footer">
+    <section class="subscribe center">
+        <div class="subscribe__info">
+            <img width="96" height="96" src="img/Intersect.png" alt="photo" class="subscribe__img">
+            <div class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                    class="subscribe__text text-italik">a pulvinar purus
+                    condimentum“</span>
+            </div>
+        </div>
+        <div class="subscribe__form">
+            <div class="subscribe__heading">
+                <span class="subscribe__heading_select">SUBSCRIBE</span> <br />
+                FOR OUR NEWLETTER AND PROMOTION
+            </div>
+            <form class="subscribe__forms">
+                <input type="email" id="email" placeholder="Enter Your Email" size="30" required
+                    class="subscribe__email">
+                <input type="submit" class="subscribe__submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+    <section class="footer__mini">
+        <div class="mini-link container">
+            <div class="copirait">
+                &copy; 2021 Brand All Rights Reserved.
+            </div>
+            <div class="social__networks">
+                <a href="#" class="footer__link facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer__link instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__link pinterest" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="footer__link twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+</footer>
